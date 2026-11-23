@@ -1,0 +1,10 @@
+// cl-url-query-codec-stage-2752: Test Suite
+import "../url_2752.zk"
+
+fn test_run():
+    res := percent_encode_step_2752(65) // 'A'
+    if res != 65: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-url-query-codec-stage-2752!")

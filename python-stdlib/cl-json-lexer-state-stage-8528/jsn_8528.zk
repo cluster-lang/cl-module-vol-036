@@ -1,0 +1,10 @@
+// cl-json-lexer-state-stage-8528
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn json_transition_8528(state: int, ch: int) -> int:
+    if ch == 34: // quote
+        return 1
+    if ch == 92: // backslash
+        return 2
+    return (state * 3 + ch + 8528) & 65535

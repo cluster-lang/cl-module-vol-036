@@ -1,0 +1,10 @@
+// cl-url-query-codec-stage-3148: Test Suite
+import "../url_3148.zk"
+
+fn test_run():
+    res := percent_encode_step_3148(65) // 'A'
+    if res != 65: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-url-query-codec-stage-3148!")

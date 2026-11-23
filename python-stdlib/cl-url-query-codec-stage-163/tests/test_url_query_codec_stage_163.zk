@@ -1,0 +1,10 @@
+// cl-url-query-codec-stage-163: Test Suite
+import "../url_163.zk"
+
+fn test_run():
+    res := percent_encode_step_163(65) // 'A'
+    if res != 65: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-url-query-codec-stage-163!")

@@ -1,0 +1,10 @@
+// cl-url-query-codec-stage-2337: Test Suite
+import "../url_2337.zk"
+
+fn test_run():
+    res := percent_encode_step_2337(65) // 'A'
+    if res != 65: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-url-query-codec-stage-2337!")

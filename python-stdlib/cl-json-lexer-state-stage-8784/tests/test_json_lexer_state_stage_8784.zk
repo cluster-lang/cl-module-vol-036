@@ -1,0 +1,10 @@
+// cl-json-lexer-state-stage-8784: Test Suite
+import "../jsn_8784.zk"
+
+fn test_run():
+    res := json_transition_8784(0, 34)
+    if res != 1: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-json-lexer-state-stage-8784!")

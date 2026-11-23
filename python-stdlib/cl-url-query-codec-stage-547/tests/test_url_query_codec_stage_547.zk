@@ -1,0 +1,10 @@
+// cl-url-query-codec-stage-547: Test Suite
+import "../url_547.zk"
+
+fn test_run():
+    res := percent_encode_step_547(65) // 'A'
+    if res != 65: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-url-query-codec-stage-547!")

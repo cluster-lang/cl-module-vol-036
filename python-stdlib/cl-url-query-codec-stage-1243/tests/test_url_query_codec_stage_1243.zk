@@ -1,0 +1,10 @@
+// cl-url-query-codec-stage-1243: Test Suite
+import "../url_1243.zk"
+
+fn test_run():
+    res := percent_encode_step_1243(65) // 'A'
+    if res != 65: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-url-query-codec-stage-1243!")
